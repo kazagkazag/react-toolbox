@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
 class Portal extends Component {
+  /* eslint-disable react/forbid-prop-types */
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
     container: PropTypes.node,
-    style: PropTypes.style,
+    style: PropTypes.object,
   }
+  /* eslint-enable react/forbid-prop-types */
 
   static defaultProps = {
     className: '',
